@@ -368,6 +368,7 @@ table thead th{
     font-weight:bold;
     border-top:3px solid #e1e4e5;
     border-bottom:1px solid #e1e4e5;
+    background: #c9c9c9;
 }
 
 table caption{
@@ -377,11 +378,11 @@ table caption{
 }
 
 table tr:nth-child(2n-1) td{
-    background-color:#f3f6f6;
+    background-color:white;
 }
 
 table tr:nth-child(2n) td{
-    background-color:white;
+    background-color:#f3f6f6;
 }
 
 .figure p{
