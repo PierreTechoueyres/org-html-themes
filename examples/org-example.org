@@ -5,13 +5,13 @@
 #+LANGUAGE:  en
 #+OPTIONS:   H:4 num:2 toc:4
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://PierreTechoueyres.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://PierreTechoueyres.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../src/readtheorg_theme/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../src/readtheorg_theme/css/readtheorg.css"/>
 
 #+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 #+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-#+HTML_HEAD: <script type="text/javascript" src="/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-#+HTML_HEAD: <script type="text/javascript" src="/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="../src/lib/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="../src/readtheorg_theme/js/readtheorg.js"></script>
 #+SETUPFILE: ../src/org-html-themes/setup/theme-readtheorg.setup
 
 #+begin_export html
