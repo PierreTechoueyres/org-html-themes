@@ -8,6 +8,10 @@
     position: relative;
 }
 
+.org-src-container pre.src {
+    position: relative;
+}
+
 pre.src {
     position: relative;
     padding-top: 30px; /* Make room for the button */
@@ -16,12 +20,12 @@ pre.src {
 /* Copy button styling */
 .copy-code-button {
     position: absolute;
-    top: 5px;
+    top: 20px;
     right: 5px;
-    padding: 4px 10px;
-    font-size: 12px;
+    padding: 2px 2px;
+    font-size: 10px;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1;
     color: #333;
     background-color: #f5f5f5;
     border: 1px solid #d1d1d1;
