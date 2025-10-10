@@ -7,7 +7,8 @@
 #+LANGUAGE:  en
 #+OPTIONS:   H:5 num:nil toc:2 p:t
 
-#+SETUPFILE: ~/org/theme-readtheorg.setup
+#+SETUPFILE: ../org/theme-readtheorg-local.setup
+# #+SETUPFILE: ../org/theme-bigblow-local.setup
 
 #+PROPERTY:  header-args :eval never-export
 
@@ -16,10 +17,10 @@ This is an Org mode document.
 *Org mode* is a easy-to-write /plain text/ formatting syntax for authoring LaTeX
 documents, creating Web pages and much more!
 
-#+begin_html
+#+begin_export html
 <script src="http://platform.twitter.com/widgets.js"></script>
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="f_niessen">Tweet</a>
-#+end_html
+#+end_export
 
 * Basics
 
@@ -343,7 +344,7 @@ Data to be charted:
 Code:
 
 #+name: R-plot
-#+begin_src R :var data=data :results graphics :file ../../images/Rplot.png :exports both
+#+begin_src R :var data=data :results graphics :file images/Rplot.png :exports both
 plot(data, type="b", bty="l", col=c("#ABD249"), las=1, lwd=4)
 grid(nx=NULL, ny=NULL, col=c("#E8E8E8"), lwd=1)
 legend("bottom", legend=c("Degrees"), col=c("#ABD249"), pch=c(19))
@@ -352,7 +353,7 @@ legend("bottom", legend=c("Degrees"), col=c("#ABD249"), pch=c(19))
 The resulting chart:
 
 #+results: R-plot
-[[file:../../images/Rplot.png]]
+[[file:images/Rplot.png]]
 
 **** R code block
 
