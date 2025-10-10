@@ -13,6 +13,9 @@
 #+HTML_HEAD: <script type="text/javascript" src="https://PierreTechoueyres.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="https://PierreTechoueyres.github.io/org-html-themes/src/readtheorg_theme/js/code-copy.js"></script>
 
+#+setupfile: https://PierreTechoueyres.github.io/org-html-themes/org/org-code.setup
+#+setupfile: https://PierreTechoueyres.github.io/org-html-themes/org/org-code-pre.setup
+
 #+MACRO: enable-search #+HTML_HEAD: <script type="text/javascript">enableSearch();</script>
 #+MACRO: disable-search #+HTML_HEAD: <script type="text/javascript">disableSearch();</script>
 #+MACRO: set-search-limit #+HTML_HEAD: <script type="text/javascript">setSearchLimit($1);</script>

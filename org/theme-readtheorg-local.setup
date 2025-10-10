@@ -6,12 +6,15 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../src/readtheorg_theme/css/code-copy.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../src/readtheorg_theme/css/search.css"/>
 
-#+HTML_HEAD: <script type="text/javascript" src="src/lib/js/jquery.min.js"></script>
-#+HTML_HEAD: <script type="text/javascript" src="src/lib/js/bootstrap.min.js"></script>
-#+HTML_HEAD: <script type="text/javascript" src="src/lib/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="../src/lib/js/jquery.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="../src/lib/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="../src/lib/js/jquery.stickytableheaders.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="../src/readtheorg_theme/js/search.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="../src/readtheorg_theme/js/readtheorg.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="../src/readtheorg_theme/js/code-copy.js"></script>
+
+#+SETUPFILE: org-code-local.setup
+#+SETUPFILE: org-code-local-pre.setup
 
 #+MACRO: enable-search #+HTML_HEAD: <script type="text/javascript">enableSearch();</script>
 #+MACRO: disable-search #+HTML_HEAD: <script type="text/javascript">disableSearch();</script>

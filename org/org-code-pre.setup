@@ -1,0 +1,118 @@
+# -*- mode: org; -*-
+
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  <!--/*--><![CDATA[/*><!--*/
+#+HTML_HEAD:   code { display: inline; max-width: 100%; overflow-x: auto; }
+#+HTML_HEAD:   pre.src { position: relative; /* overflow: visible; */ padding-top: 1.2em; max-height: 500px; overflow-y: auto }
+#+HTML_HEAD:   pre.src:before { display: none; position: absolute;
+#+HTML_HEAD:                    top: -10px; right: 10px; padding: 3px; border: 1px solid black;
+#+HTML_HEAD:                    padding-top: 0.8em; border: none; font-weight: bold; color: blue; }
+#+HTML_HEAD:   pre.src:hover:before { display: inline;}
+#+HTML_HEAD:   /* Languages per Org manual */
+#+HTML_HEAD:   pre.src-asymptote:before             { content: 'Asymptote'; }
+#+HTML_HEAD:   pre.src-awk:before                   { content: 'Awk'; }
+#+HTML_HEAD:   pre.src-C:before                     { content: 'C'; }
+#+HTML_HEAD:   /* pre.src-C++ doesn't work in CSS */
+#+HTML_HEAD:   pre.src-clojure:before               { content: 'Clojure'; }
+#+HTML_HEAD:   pre.src-css:before                   { content: 'CSS'; }
+#+HTML_HEAD:   pre.src-D:before                     { content: 'D'; }
+#+HTML_HEAD:   pre.src-ditaa:before                 { content: 'ditaa'; }
+#+HTML_HEAD:   pre.src-dot:before                   { content: 'Graphviz'; }
+#+HTML_HEAD:   pre.src-calc:before                  { content: 'Emacs Calc'; }
+#+HTML_HEAD:   pre.src-compilation:before           { content: 'Compilation'; }
+#+HTML_HEAD:   pre.src-emacs-lisp:before            { content: 'Emacs Lisp'; }
+#+HTML_HEAD:   pre.src-fortran:before               { content: 'Fortran'; }
+#+HTML_HEAD:   pre.src-gnuplot:before               { content: 'gnuplot'; }
+#+HTML_HEAD:   pre.src-haskell:before               { content: 'Haskell'; }
+#+HTML_HEAD:   pre.src-java:before                  { content: 'Java'; }
+#+HTML_HEAD:   pre.src-js:before                    { content: 'Javascript'; }
+#+HTML_HEAD:   pre.src-json:before, pre.src-jsonian:before { content: 'JSON'; }
+#+HTML_HEAD:   pre.src-kusto:before                 { content: 'Kusto'; }
+#+HTML_HEAD:   pre.src-latex:before                 { content: 'LaTeX'; }
+#+HTML_HEAD:   pre.src-ledger:before                { content: 'Ledger'; }
+#+HTML_HEAD:   pre.src-lisp:before                  { content: 'Lisp'; }
+#+HTML_HEAD:   pre.src-lilypond:before              { content: 'Lilypond'; }
+#+HTML_HEAD:   pre.src-lua:before                   { content: 'Lua'; }
+#+HTML_HEAD:   pre.src-matlab:before                { content: 'MATLAB'; }
+#+HTML_HEAD:   pre.src-mscgen:before                { content: 'Mscgen'; }
+#+HTML_HEAD:   pre.src-ocaml:before                 { content: 'Objective Caml'; }
+#+HTML_HEAD:   pre.src-octave:before                { content: 'Octave'; }
+#+HTML_HEAD:   pre.src-org:before                   { content: 'Org mode'; }
+#+HTML_HEAD:   pre.src-oz:before                    { content: 'OZ'; }
+#+HTML_HEAD:   pre.src-plantuml:before              { content: 'Plantuml'; }
+#+HTML_HEAD:   pre.src-processing:before            { content: 'Processing.js'; }
+#+HTML_HEAD:   pre.src-python:before                { content: 'Python'; }
+#+HTML_HEAD:   pre.src-R:before                     { content: 'R'; }
+#+HTML_HEAD:   pre.src-ruby:before                  { content: 'Ruby'; }
+#+HTML_HEAD:   pre.src-sass:before                  { content: 'Sass'; }
+#+HTML_HEAD:   pre.src-scheme:before                { content: 'Scheme'; }
+#+HTML_HEAD:   pre.src-screen:before                { content: 'Gnu Screen'; }
+#+HTML_HEAD:   pre.src-sed:before                   { content: 'Sed'; }
+#+HTML_HEAD:   pre.src-sh:before                    { content: 'shell'; }
+#+HTML_HEAD:   pre.src-sql:before                   { content: 'SQL'; }
+#+HTML_HEAD:   pre.src-sqlite:before                { content: 'SQLite'; }
+#+HTML_HEAD:   pre.src-sqlldr:before                { content: 'SQL*Loader'; }
+#+HTML_HEAD:   /* additional languages in org.el's org-babel-load-languages alist */
+#+HTML_HEAD:   pre.src-forth:before                 { content: 'Forth'; }
+#+HTML_HEAD:   pre.src-io:before                    { content: 'IO'; }
+#+HTML_HEAD:   pre.src-J:before                     { content: 'J'; }
+#+HTML_HEAD:   pre.src-makefile:before              { content: 'Makefile'; }
+#+HTML_HEAD:   pre.src-maxima:before                { content: 'Maxima'; }
+#+HTML_HEAD:   pre.src-perl:before                  { content: 'Perl'; }
+#+HTML_HEAD:   pre.src-picolisp:before              { content: 'Pico Lisp'; }
+#+HTML_HEAD:   pre.src-scala:before                 { content: 'Scala'; }
+#+HTML_HEAD:   pre.src-shell:before                 { content: 'Shell Script'; }
+#+HTML_HEAD:   pre.src-ebnf2ps:before               { content: 'ebfn2ps'; }
+#+HTML_HEAD:   /* additional language identifiers per "defun org-babel-execute"
+#+HTML_HEAD:        in ob-*.el */
+#+HTML_HEAD:   pre.src-cpp:before                   { content: 'C++'; }
+#+HTML_HEAD:   pre.src-abc:before                   { content: 'ABC'; }
+#+HTML_HEAD:   pre.src-coq:before                   { content: 'Coq'; }
+#+HTML_HEAD:   pre.src-groovy:before                { content: 'Groovy'; }
+#+HTML_HEAD:   /* additional language identifiers from org-babel-shell-names in
+#+HTML_HEAD:      ob-shell.el: ob-shell is the only babel language using a lambda to put
+#+HTML_HEAD:      the execution function name together. */
+#+HTML_HEAD:   pre.src-bash:before                  { content: 'bash'; }
+#+HTML_HEAD:   pre.src-csh:before                   { content: 'csh'; }
+#+HTML_HEAD:   pre.src-ash:before                   { content: 'ash'; }
+#+HTML_HEAD:   pre.src-dash:before                  { content: 'dash'; }
+#+HTML_HEAD:   pre.src-ksh:before                   { content: 'ksh'; }
+#+HTML_HEAD:   pre.src-mksh:before                  { content: 'mksh'; }
+#+HTML_HEAD:   pre.src-posh:before                  { content: 'posh'; }
+#+HTML_HEAD:   pre.src-powershell:before            { content: 'PowerShell'; }
+#+HTML_HEAD:   /* Additional Emacs modes also supported by the LaTeX listings package */
+#+HTML_HEAD:   pre.src-ada:before                   { content: 'Ada'; }
+#+HTML_HEAD:   pre.src-asm:before                   { content: 'Assembler'; }
+#+HTML_HEAD:   pre.src-caml:before                  { content: 'Caml'; }
+#+HTML_HEAD:   pre.src-delphi:before                { content: 'Delphi'; }
+#+HTML_HEAD:   pre.src-html:before                  { content: 'HTML'; }
+#+HTML_HEAD:   pre.src-idl:before                   { content: 'IDL'; }
+#+HTML_HEAD:   pre.src-mercury:before               { content: 'Mercury'; }
+#+HTML_HEAD:   pre.src-metapost:before              { content: 'MetaPost'; }
+#+HTML_HEAD:   pre.src-modula-2:before              { content: 'Modula-2'; }
+#+HTML_HEAD:   pre.src-pascal:before                { content: 'Pascal'; }
+#+HTML_HEAD:   pre.src-ps:before                    { content: 'PostScript'; }
+#+HTML_HEAD:   pre.src-prolog:before                { content: 'Prolog'; }
+#+HTML_HEAD:   pre.src-simula:before                { content: 'Simula'; }
+#+HTML_HEAD:   pre.src-tcl:before                   { content: 'tcl'; }
+#+HTML_HEAD:   pre.src-tex:before                   { content: 'TeX'; }
+#+HTML_HEAD:   pre.src-plain-tex:before             { content: 'Plain TeX'; }
+#+HTML_HEAD:   pre.src-verilog:before               { content: 'Verilog'; }
+#+HTML_HEAD:   pre.src-vhdl:before                  { content: 'VHDL'; }
+#+HTML_HEAD:   pre.src-xml:before                   { content: 'XML'; }
+#+HTML_HEAD:   pre.src-nxml:before                  { content: 'XML'; }
+#+HTML_HEAD:   /* add a generic configuration mode; LaTeX export needs an additional
+#+HTML_HEAD:      (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+#+HTML_HEAD:   pre.src-yaml:before                  { content: 'YAML'; }
+#+HTML_HEAD:   pre.src-csharp:before                { content: 'C#'; }
+
+#+HTML_HEAD:   pre.src-conf:before                  { content: 'Configuration File'; }
+#+HTML_HEAD:   pre.src-conf-unix:before             { content: 'Configuration File'; }
+#+HTML_HEAD:   pre.src-conf-colon:before            { content: 'Configuration File'; }
+#+HTML_HEAD:   pre.src-bat:before                   { content: 'DOS/Windows batch file'; }
+#+HTML_HEAD:   pre.src-java-manifest-generic:before { content: 'Java-Manifest-Generic'; }
+#+HTML_HEAD:   pre.src-csharp:before                { content: 'C#'; }
+#+HTML_HEAD:   pre.src-csv:before                   { content: 'CSV'; }
+#+HTML_HEAD:   pre.src-restclient:before            { content: 'REST Client'; }
+#+HTML_HEAD:   /*]]>*/-->
+#+HTML_HEAD: </style>

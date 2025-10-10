@@ -1,0 +1,110 @@
+# -*- mode: org; -*-
+
+#+HTML_HEAD: <style type="text/css">.linenr{color:lightgray;}#content {max-width: 100%!important;}</style>
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  <!--/*--><![CDATA[/*><!--*/
+#+HTML_HEAD:   .title  { text-align: center;
+#+HTML_HEAD:              margin-bottom: .2em; }
+#+HTML_HEAD:   .subtitle { text-align: center;
+#+HTML_HEAD:               font-size: medium;
+#+HTML_HEAD:               font-weight: bold;
+#+HTML_HEAD:               margin-top:0; }
+#+HTML_HEAD:   .todo   { font-family: monospace; color: red; }
+#+HTML_HEAD:   .done   { font-family: monospace; color: green; }
+#+HTML_HEAD:   .priority { font-family: monospace; color: orange; }
+#+HTML_HEAD:   .tag    { background-color: #eee; font-family: monospace;
+#+HTML_HEAD:             padding: 2px; font-size: 80%; font-weight: normal; }
+#+HTML_HEAD:   .timestamp { color: #bebebe; }
+#+HTML_HEAD:   .timestamp-kwd { color: #5f9ea0; }
+#+HTML_HEAD:   .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+#+HTML_HEAD:   .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+#+HTML_HEAD:   .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+#+HTML_HEAD:   .underline { text-decoration: underline; }
+#+HTML_HEAD:   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+#+HTML_HEAD:   p.verse { margin-left: 3%; max-height: 500px; overflow-y: auto }
+#+HTML_HEAD:   table[name="mentions_légales_tbl"] { display: none; }
+#+HTML_HEAD:   pre {
+#+HTML_HEAD:     border: 1px solid #ccc;
+#+HTML_HEAD:     box-shadow: 3px 3px 3px #eee;
+#+HTML_HEAD:     padding: 8pt;
+#+HTML_HEAD:     font-family: monospace;
+#+HTML_HEAD:     overflow: auto;
+#+HTML_HEAD:     margin: 1.2em;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   table { border-collapse:collapse; }
+#+HTML_HEAD:   caption.t-above { caption-side: top; }
+#+HTML_HEAD:   caption.t-bottom { caption-side: bottom; }
+#+HTML_HEAD:   td, th { vertical-align:top;  }
+#+HTML_HEAD:   th.org-right  { text-align: right;  }
+#+HTML_HEAD:   th.org-left   { text-align: left;   }
+#+HTML_HEAD:   th.org-center { text-align: center; }
+#+HTML_HEAD:   td.org-right  { text-align: right;  }
+#+HTML_HEAD:   td.org-left   { text-align: left;   }
+#+HTML_HEAD:   td.org-center { text-align: center; }
+#+HTML_HEAD:   dt { font-weight: bold; }
+#+HTML_HEAD:   .footpara { display: inline; }
+#+HTML_HEAD:   .footdef  { margin-bottom: 1em; }
+#+HTML_HEAD:   .figure { padding: 1em; }
+#+HTML_HEAD:   .figure p { text-align: center; }
+#+HTML_HEAD:   .inlinetask {
+#+HTML_HEAD:     padding: 10px;
+#+HTML_HEAD:     border: 2px solid gray;
+#+HTML_HEAD:     margin: 10px;
+#+HTML_HEAD:     background: #ffffcc;
+#+HTML_HEAD:   }
+#+HTML_HEAD:   #org-div-home-and-up
+#+HTML_HEAD:    { text-align: right; font-size: 70%; white-space: nowrap; }
+#+HTML_HEAD:   textarea { overflow-x: auto; }
+#+HTML_HEAD:   .linenr { font-size: smaller }
+#+HTML_HEAD:   .code-highlighted { background-color: #ffff00; }
+#+HTML_HEAD:   .org-info-js_info-navigation { border-style: none; }
+#+HTML_HEAD:   #org-info-js_console-label
+#+HTML_HEAD:     { font-size: 10px; font-weight: bold; white-space: nowrap; }
+#+HTML_HEAD:   .org-info-js_search-highlight
+#+HTML_HEAD:     { background-color: #ffff00; color: #000000; font-weight: bold; }
+#+HTML_HEAD:   .org-svg { width: 90%; }
+#+HTML_HEAD:   li>ul { margin: unset; }
+#+HTML_HEAD:   table thead { background: #c9c9c9; }
+#+HTML_HEAD:   table tr:nth-child(2n-1) td{ background-color:white; }
+#+HTML_HEAD:   table tr:nth-child(2n) td{ background-color:#f3f6f6; }
+
+#+HTML_HEAD:   .org-restclient-file-upload { /* restclient-file-upload-face */ color: #2a486a; }
+#+HTML_HEAD:   .org-restclient-header-name { /* restclient-header-name-face */ color: #00538b; }
+#+HTML_HEAD:   .org-restclient-header-value { /* restclient-header-value-face */ color: #2544bb; }
+#+HTML_HEAD:   .org-restclient-method { /* restclient-method-face */ color: #5317ac; }
+#+HTML_HEAD:   .org-restclient-request-hook { /* restclient-request-hook-face */ color: #a0132f; }
+#+HTML_HEAD:   .org-restclient-request-hook-args { /* restclient-request-hook-args-face */ color: #2544bb; }
+#+HTML_HEAD:   .org-restclient-request-hook-name { /* restclient-request-hook-name-face */ color: #721045; }
+#+HTML_HEAD:   .org-restclient-url { /* restclient-url-face */ color: #721045; }
+#+HTML_HEAD:   .org-restclient-variable-elisp { /* restclient-variable-elisp-face */ color: #721045; }
+#+HTML_HEAD:   .org-restclient-variable-multiline { /* restclient-variable-multiline-face */ color: #2a486a; }
+#+HTML_HEAD:   .org-restclient-variable-name { /* restclient-variable-name-face */ color: #a0132f; }
+#+HTML_HEAD:   .org-restclient-variable-string { /* restclient-variable-string-face */ color: #2544bb; }
+#+HTML_HEAD:   .org-restclient-variable-usage { /* restclient-variable-usage-face */ color: #a0132f; }
+
+#+HTML_HEAD:   @font-face{
+#+HTML_HEAD:   font-family: 'NerdFontsSymbols Nerd Font';
+#+HTML_HEAD:   src:url("https://www.nerdfonts.com/assets/fonts/Symbols-2048-em Nerd Font Complete.woff2") format("woff2");
+#+HTML_HEAD:   font-weight:normal;
+#+HTML_HEAD:   font-style:normal
+#+HTML_HEAD:   }
+#+HTML_HEAD:   pre.src-sh {
+#+HTML_HEAD:       font-family: 'NerdFontsSymbols Nerd Font', Verdana, Tahoma;
+#+HTML_HEAD:   }
+
+#+HTML_HEAD:   p{margin-bottom:1em;}
+
+#+HTML_HEAD:   h2,h3,4,5{padding-top:1em;}
+
+#+HTML_HEAD:   h2,h3{margin-top:2em;}
+#+HTML_HEAD:   h2{border-top:darkgray 2px solid;}
+#+HTML_HEAD:   h3{border-top:lightblue 1px dashed;}
+
+#+HTML_HEAD:   h4,h5,h6 {margin-bottom:1em;}
+#+HTML_HEAD:   h5{color:black;font-size:1em;}
+
+#+HTML_HEAD:   div.response,div.request{padding-top:0;margin-bottom:0.5em;color:darkgray;font-size:0.8em;}
+
+#+HTML_HEAD:   /*]]>*/-->
+#+HTML_HEAD: </style>
