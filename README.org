@@ -206,7 +206,7 @@ Using a theme from the [[id:79e0ed21-c3b0-4f00-bdab-29fbff9dcad4][theme gallery]
    chosen theme:
 
    #+begin_src org :exports code
-   ,#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-NAME.setup
+   ,#+SETUPFILE: https://PierreTechoueyres.github.io/org-html-themes/org/theme-NAME.setup
    #+end_src
 
    (where ~NAME~ is either ~bigblow~ or ~readtheorg~)
@@ -256,7 +256,7 @@ Solution provided by Malcolm Cook:
 ** Report issues and enhancements
 
 Found a bug or have an idea for a new feature?  Share your thoughts on the
-[[https://github.com/fniessen/org-html-themes/issues/new][GitHub issue tracker]].
+[[https://github.com/PierreTechoueyres/org-html-themes/issues/new][GitHub issue tracker]].
 
 ** Submit patches
 
