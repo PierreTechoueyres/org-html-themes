@@ -114,5 +114,8 @@
 #+HTML_HEAD:   pre.src-csharp:before                { content: 'C#'; }
 #+HTML_HEAD:   pre.src-csv:before                   { content: 'CSV'; }
 #+HTML_HEAD:   pre.src-restclient:before            { content: 'REST Client'; }
+#+HTML_HEAD:   pre.src-diff:before                  { content: 'Diff'; }
+#+HTML_HEAD:   pre.src-conf-javaprop:before         { content: 'Conf: Java properties'; }
+
 #+HTML_HEAD:   /*]]>*/-->
 #+HTML_HEAD: </style>
