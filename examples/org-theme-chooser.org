@@ -6,6 +6,7 @@
 #+OPTIONS:   H:6 num:nil toc:4
 
 #+SETUPFILE: ../org/theme-readtheorg-local.setup
+# #+SETUPFILE: ../org/theme-bigblow-local.setup
 
 # See GitHub Settings > GitHub Pages > Theme Chooser
 

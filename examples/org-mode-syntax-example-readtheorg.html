@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-10-10 ven. 23:40 -->
+<!-- 2025-10-13 lun. 18:41 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Org mode syntax example</title>
@@ -52,117 +52,6 @@ font-family: monospace;
 overflow: auto;
 margin: 1.2em;
 }
-code { display: inline; max-width: 100%; overflow-x: auto; }
-pre.src { position: relative; /* overflow: visible; */ padding-top: 1.2em; max-height: 500px; overflow-y: auto }
-pre.src:before { display: none; position: absolute;
-top: -10px; right: 10px; padding: 3px; border: 1px solid black;
-padding-top: 0.8em; border: none; font-weight: bold; color: blue; }
-pre.src:hover:before { display: inline;}
-/* Languages per Org manual */
-pre.src-asymptote:before             { content: 'Asymptote'; }
-pre.src-awk:before                   { content: 'Awk'; }
-pre.src-C:before                     { content: 'C'; }
-/* pre.src-C++ doesn't work in CSS */
-pre.src-clojure:before               { content: 'Clojure'; }
-pre.src-css:before                   { content: 'CSS'; }
-pre.src-D:before                     { content: 'D'; }
-pre.src-ditaa:before                 { content: 'ditaa'; }
-pre.src-dot:before                   { content: 'Graphviz'; }
-pre.src-calc:before                  { content: 'Emacs Calc'; }
-pre.src-compilation:before           { content: 'Compilation'; }
-pre.src-emacs-lisp:before            { content: 'Emacs Lisp'; }
-pre.src-fortran:before               { content: 'Fortran'; }
-pre.src-gnuplot:before               { content: 'gnuplot'; }
-pre.src-haskell:before               { content: 'Haskell'; }
-pre.src-java:before                  { content: 'Java'; }
-pre.src-js:before                    { content: 'Javascript'; }
-pre.src-json:before, pre.src-jsonian:before { content: 'JSON'; }
-pre.src-kusto:before                 { content: 'Kusto'; }
-pre.src-latex:before                 { content: 'LaTeX'; }
-pre.src-ledger:before                { content: 'Ledger'; }
-pre.src-lisp:before                  { content: 'Lisp'; }
-pre.src-lilypond:before              { content: 'Lilypond'; }
-pre.src-lua:before                   { content: 'Lua'; }
-pre.src-matlab:before                { content: 'MATLAB'; }
-pre.src-mscgen:before                { content: 'Mscgen'; }
-pre.src-ocaml:before                 { content: 'Objective Caml'; }
-pre.src-octave:before                { content: 'Octave'; }
-pre.src-org:before                   { content: 'Org mode'; }
-pre.src-oz:before                    { content: 'OZ'; }
-pre.src-plantuml:before              { content: 'Plantuml'; }
-pre.src-processing:before            { content: 'Processing.js'; }
-pre.src-python:before                { content: 'Python'; }
-pre.src-R:before                     { content: 'R'; }
-pre.src-ruby:before                  { content: 'Ruby'; }
-pre.src-sass:before                  { content: 'Sass'; }
-pre.src-scheme:before                { content: 'Scheme'; }
-pre.src-screen:before                { content: 'Gnu Screen'; }
-pre.src-sed:before                   { content: 'Sed'; }
-pre.src-sh:before                    { content: 'shell'; }
-pre.src-sql:before                   { content: 'SQL'; }
-pre.src-sqlite:before                { content: 'SQLite'; }
-pre.src-sqlldr:before                { content: 'SQL*Loader'; }
-/* additional languages in org.el's org-babel-load-languages alist */
-pre.src-forth:before                 { content: 'Forth'; }
-pre.src-io:before                    { content: 'IO'; }
-pre.src-J:before                     { content: 'J'; }
-pre.src-makefile:before              { content: 'Makefile'; }
-pre.src-maxima:before                { content: 'Maxima'; }
-pre.src-perl:before                  { content: 'Perl'; }
-pre.src-picolisp:before              { content: 'Pico Lisp'; }
-pre.src-scala:before                 { content: 'Scala'; }
-pre.src-shell:before                 { content: 'Shell Script'; }
-pre.src-ebnf2ps:before               { content: 'ebfn2ps'; }
-/* additional language identifiers per "defun org-babel-execute"
-in ob-*.el */
-pre.src-cpp:before                   { content: 'C++'; }
-pre.src-abc:before                   { content: 'ABC'; }
-pre.src-coq:before                   { content: 'Coq'; }
-pre.src-groovy:before                { content: 'Groovy'; }
-/* additional language identifiers from org-babel-shell-names in
-ob-shell.el: ob-shell is the only babel language using a lambda to put
-the execution function name together. */
-pre.src-bash:before                  { content: 'bash'; }
-pre.src-csh:before                   { content: 'csh'; }
-pre.src-ash:before                   { content: 'ash'; }
-pre.src-dash:before                  { content: 'dash'; }
-pre.src-ksh:before                   { content: 'ksh'; }
-pre.src-mksh:before                  { content: 'mksh'; }
-pre.src-posh:before                  { content: 'posh'; }
-pre.src-powershell:before            { content: 'PowerShell'; }
-/* Additional Emacs modes also supported by the LaTeX listings package */
-pre.src-ada:before                   { content: 'Ada'; }
-pre.src-asm:before                   { content: 'Assembler'; }
-pre.src-caml:before                  { content: 'Caml'; }
-pre.src-delphi:before                { content: 'Delphi'; }
-pre.src-html:before                  { content: 'HTML'; }
-pre.src-idl:before                   { content: 'IDL'; }
-pre.src-mercury:before               { content: 'Mercury'; }
-pre.src-metapost:before              { content: 'MetaPost'; }
-pre.src-modula-2:before              { content: 'Modula-2'; }
-pre.src-pascal:before                { content: 'Pascal'; }
-pre.src-ps:before                    { content: 'PostScript'; }
-pre.src-prolog:before                { content: 'Prolog'; }
-pre.src-simula:before                { content: 'Simula'; }
-pre.src-tcl:before                   { content: 'tcl'; }
-pre.src-tex:before                   { content: 'TeX'; }
-pre.src-plain-tex:before             { content: 'Plain TeX'; }
-pre.src-verilog:before               { content: 'Verilog'; }
-pre.src-vhdl:before                  { content: 'VHDL'; }
-pre.src-xml:before                   { content: 'XML'; }
-pre.src-nxml:before                  { content: 'XML'; }
-/* add a generic configuration mode; LaTeX export needs an additional
-(add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-pre.src-yaml:before                  { content: 'YAML'; }
-pre.src-csharp:before                { content: 'C#'; }
-pre.src-conf:before                  { content: 'Configuration File'; }
-pre.src-conf-unix:before             { content: 'Configuration File'; }
-pre.src-conf-colon:before            { content: 'Configuration File'; }
-pre.src-bat:before                   { content: 'DOS/Windows batch file'; }
-pre.src-java-manifest-generic:before { content: 'Java-Manifest-Generic'; }
-pre.src-csharp:before                { content: 'C#'; }
-pre.src-csv:before                   { content: 'CSV'; }
-pre.src-restclient:before            { content: 'REST Client'; }
 
 table { border-collapse:collapse; }
 caption.t-above { caption-side: top; }
@@ -272,36 +161,36 @@ div.response,div.request{padding-top:0;margin-bottom:0.5em;color:darkgray;font-s
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgcd97880">Basics</a>
+<li><a href="#org9382450">Basics</a>
 <ul>
-<li><a href="#org3aaa58b">Biggest heading</a></li>
-<li><a href="#org91d8b79">Lists</a></li>
-<li><a href="#org71252c2">Miscellaneous effects</a></li>
-<li><a href="#org53ca055">Code blocks</a></li>
-<li><a href="#orged4abcb">Inline code</a></li>
-<li><a href="#org59540d8">Notes at the footer</a></li>
-<li><a href="#orgc75ff0e">Formatting text</a></li>
-<li><a href="#orgd992ec9">Mathematical formulae</a></li>
-<li><a href="#org69169ce">Special characters</a></li>
-<li><a href="#org16e1035">Comments</a></li>
-<li><a href="#org986c912">Tables</a></li>
-<li><a href="#orgfc789ce">Images, video and audio</a></li>
-<li><a href="#org68d7fe7">Special text boxes</a></li>
+<li><a href="#org3d24d8e">Biggest heading</a></li>
+<li><a href="#org4cb4943">Lists</a></li>
+<li><a href="#org02c5658">Miscellaneous effects</a></li>
+<li><a href="#org8f7386b">Code blocks</a></li>
+<li><a href="#org7f32c8e">Inline code</a></li>
+<li><a href="#org68bb73a">Notes at the footer</a></li>
+<li><a href="#org5ba62a5">Formatting text</a></li>
+<li><a href="#orgebe175c">Mathematical formulae</a></li>
+<li><a href="#orgf76124a">Special characters</a></li>
+<li><a href="#org5ace0cf">Comments</a></li>
+<li><a href="#org9df16c1">Tables</a></li>
+<li><a href="#orga03c7f1">Images, video and audio</a></li>
+<li><a href="#orgc2746b9">Special text boxes</a></li>
 <li><a href="#links">Links</a></li>
 </ul>
 </li>
-<li><a href="#orga7db39b">Org miscellaneous</a>
+<li><a href="#orgb1fcddf">Org miscellaneous</a>
 <ul>
-<li><a href="#org21542c7">Dates</a></li>
-<li><a href="#org5632178"><span class="done DONE">DONE</span> Buy GTD book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="online">online</span></span></a></li>
-<li><a href="#orgdbdc2a5"><span class="todo TODO">TODO</span> Read GTD book</a></li>
-<li><a href="#org57dc5bb"><span class="todo TODO">TODO</span> Apply GTD methodoloy</a></li>
-<li><a href="#org2aa67a6">Some note&#xa0;&#xa0;&#xa0;<span class="tag"><span class="computer">computer</span>&#xa0;<span class="write">write</span></span></a></li>
-<li><a href="#orgabb2d0d">Weekly review&#xa0;&#xa0;&#xa0;<span class="tag"><span class="computer">computer</span></span></a></li>
+<li><a href="#orgb5f6e32">Dates</a></li>
+<li><a href="#org6fc1490"><span class="done DONE">DONE</span> Buy GTD book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="online">online</span></span></a></li>
+<li><a href="#orge565072"><span class="todo TODO">TODO</span> Read GTD book</a></li>
+<li><a href="#orgcd82719"><span class="todo TODO">TODO</span> Apply GTD methodoloy</a></li>
+<li><a href="#orga5971fe">Some note&#xa0;&#xa0;&#xa0;<span class="tag"><span class="computer">computer</span>&#xa0;<span class="write">write</span></span></a></li>
+<li><a href="#orga4e4183">Weekly review&#xa0;&#xa0;&#xa0;<span class="tag"><span class="computer">computer</span></span></a></li>
 </ul>
 </li>
-<li><a href="#orga32ba5f">Org macros</a></li>
-<li><a href="#org633f94f">BigBlow addons</a></li>
+<li><a href="#orgc891e6b">Org macros</a></li>
+<li><a href="#orgd1a3520">BigBlow addons</a></li>
 </ul>
 </div>
 </div>
@@ -316,35 +205,35 @@ documents, creating Web pages and much more!
 
 <script src="http://platform.twitter.com/widgets.js"></script>
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="f_niessen">Tweet</a>
-<div id="outline-container-orgcd97880" class="outline-2">
-<h2 id="orgcd97880">Basics</h2>
-<div class="outline-text-2" id="text-orgcd97880">
+<div id="outline-container-org9382450" class="outline-2">
+<h2 id="org9382450">Basics</h2>
+<div class="outline-text-2" id="text-org9382450">
 </div>
-<div id="outline-container-org3aaa58b" class="outline-3">
-<h3 id="org3aaa58b">Biggest heading</h3>
-<div class="outline-text-3" id="text-org3aaa58b">
+<div id="outline-container-org3d24d8e" class="outline-3">
+<h3 id="org3d24d8e">Biggest heading</h3>
+<div class="outline-text-3" id="text-org3d24d8e">
 <p>
 New chapter.
 </p>
 </div>
-<div id="outline-container-org877f460" class="outline-4">
-<h4 id="org877f460">Bigger heading</h4>
-<div class="outline-text-4" id="text-org877f460">
+<div id="outline-container-orgdf093bb" class="outline-4">
+<h4 id="orgdf093bb">Bigger heading</h4>
+<div class="outline-text-4" id="text-orgdf093bb">
 <p>
 New section.
 </p>
 </div>
-<div id="outline-container-org6c1ce50" class="outline-5">
-<h5 id="org6c1ce50">Big heading</h5>
-<div class="outline-text-5" id="text-org6c1ce50">
+<div id="outline-container-org3981122" class="outline-5">
+<h5 id="org3981122">Big heading</h5>
+<div class="outline-text-5" id="text-org3981122">
 <p>
 New sub-section.
 </p>
 </div>
 </div>
-<div id="outline-container-org0dd9fea" class="outline-5">
-<h5 id="org0dd9fea">Text breaks</h5>
-<div class="outline-text-5" id="text-org0dd9fea">
+<div id="outline-container-org2a116ce" class="outline-5">
+<h5 id="org2a116ce">Text breaks</h5>
+<div class="outline-text-5" id="text-org2a116ce">
 <p>
 A single newline has no effect.
 This line is part of the same paragraph.
@@ -374,9 +263,9 @@ and some text below it.
 </p>
 </div>
 </div>
-<div id="outline-container-org1566927" class="outline-5">
-<h5 id="org1566927">Numbered headings</h5>
-<div class="outline-text-5" id="text-org1566927">
+<div id="outline-container-org095834d" class="outline-5">
+<h5 id="org095834d">Numbered headings</h5>
+<div class="outline-text-5" id="text-org095834d">
 <p>
 You can create numbered headings up to a certain level by setting an option:
 </p>
@@ -388,9 +277,9 @@ You can create numbered headings up to a certain level by setting an option:
 </div>
 </div>
 </div>
-<div id="outline-container-orgfd8b461" class="outline-4">
-<h4 id="orgfd8b461">Text width</h4>
-<div class="outline-text-4" id="text-orgfd8b461">
+<div id="outline-container-org3638b24" class="outline-4">
+<h4 id="org3638b24">Text width</h4>
+<div class="outline-text-4" id="text-org3638b24">
 <p>
 One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin. He lay on his armour-like back,
@@ -402,17 +291,17 @@ compared with the size of the rest of him, waved about helplessly as he looked.
 </div>
 </div>
 </div>
-<div id="outline-container-org91d8b79" class="outline-3">
-<h3 id="org91d8b79">Lists</h3>
-<div class="outline-text-3" id="text-org91d8b79">
+<div id="outline-container-org4cb4943" class="outline-3">
+<h3 id="org4cb4943">Lists</h3>
+<div class="outline-text-3" id="text-org4cb4943">
 <p>
 Org markup allows you to create bulleted or numbered lists. It allows any
 combination of the two list types.
 </p>
 </div>
-<div id="outline-container-org0a8b0b0" class="outline-4">
-<h4 id="org0a8b0b0">Unordered lists</h4>
-<div class="outline-text-4" id="text-org0a8b0b0">
+<div id="outline-container-org510ae04" class="outline-4">
+<h4 id="org510ae04">Unordered lists</h4>
+<div class="outline-text-4" id="text-org510ae04">
 <p>
 Itemized lists are marked with bullets. They are convenient to:
 </p>
@@ -431,9 +320,9 @@ Create them with a minus or a plus sign.
 </p>
 </div>
 </div>
-<div id="outline-container-orgeb9d60c" class="outline-4">
-<h4 id="orgeb9d60c">Ordered lists</h4>
-<div class="outline-text-4" id="text-orgeb9d60c">
+<div id="outline-container-orgf99eb53" class="outline-4">
+<h4 id="orgf99eb53">Ordered lists</h4>
+<div class="outline-text-4" id="text-orgf99eb53">
 <p>
 Enumerated lists are marked with numbers or letters:
 </p>
@@ -458,9 +347,9 @@ You can have ordered lists with jumping numbers:
 </ol>
 </div>
 </div>
-<div id="outline-container-org62e3e5b" class="outline-4">
-<h4 id="org62e3e5b">Definition lists</h4>
-<div class="outline-text-4" id="text-org62e3e5b">
+<div id="outline-container-org0e2f776" class="outline-4">
+<h4 id="org0e2f776">Definition lists</h4>
+<div class="outline-text-4" id="text-org0e2f776">
 <dl class="org-dl">
 <dt>Definition list</dt><dd>List containing definitions.</dd>
 
@@ -468,9 +357,9 @@ You can have ordered lists with jumping numbers:
 </dl>
 </div>
 </div>
-<div id="outline-container-orga5b9ef9" class="outline-4">
-<h4 id="orga5b9ef9">Checkboxes</h4>
-<div class="outline-text-4" id="text-orga5b9ef9">
+<div id="outline-container-org4dd7e24" class="outline-4">
+<h4 id="org4dd7e24">Checkboxes</h4>
+<div class="outline-text-4" id="text-org4dd7e24">
 <ul class="org-ul">
 <li class="off"><input type='checkbox' /> First item not checked</li>
 <li class="trans"><input type='checkbox' /> Second item half done
@@ -483,13 +372,13 @@ You can have ordered lists with jumping numbers:
 </div>
 </div>
 </div>
-<div id="outline-container-org71252c2" class="outline-3">
-<h3 id="org71252c2">Miscellaneous effects</h3>
-<div class="outline-text-3" id="text-org71252c2">
+<div id="outline-container-org02c5658" class="outline-3">
+<h3 id="org02c5658">Miscellaneous effects</h3>
+<div class="outline-text-3" id="text-org02c5658">
 </div>
-<div id="outline-container-org99c6781" class="outline-4">
-<h4 id="org99c6781">Include Org files</h4>
-<div class="outline-text-4" id="text-org99c6781">
+<div id="outline-container-orgbf2299a" class="outline-4">
+<h4 id="orgbf2299a">Include Org files</h4>
+<div class="outline-text-4" id="text-orgbf2299a">
 <p>
 You can include another Org file and skip its title by using the <code>:lines</code> argument
 to <code>#+INCLUDE</code>:
@@ -500,7 +389,7 @@ to <code>#+INCLUDE</code>:
 </pre>
 </div>
 
-<div class="note" id="org9705fae">
+<div class="note" id="orgf02818f">
 <p>
 File inclusion, through INCLUDE keywords, is an <b>export-only feature</b>.
 </p>
@@ -508,9 +397,9 @@ File inclusion, through INCLUDE keywords, is an <b>export-only feature</b>.
 </div>
 </div>
 </div>
-<div id="outline-container-org3353c94" class="outline-4">
-<h4 id="org3353c94">Inline HTML</h4>
-<div class="outline-text-4" id="text-org3353c94">
+<div id="outline-container-orgbff17c2" class="outline-4">
+<h4 id="orgbff17c2">Inline HTML</h4>
+<div class="outline-text-4" id="text-orgbff17c2">
 <p>
 You can include raw HTML in your Org documents and it will get kept as HTML
 when it's exported. XXX
@@ -533,7 +422,7 @@ Similarly, you can incorporate JS or do anything else you can do in a Web page
 You can create named classes (to get style control from your CSS) with:
 </p>
 
-<pre class="example" id="orgd380535">
+<pre class="example" id="org1063f78">
 #+begin_info
 *Info example* \\
 Did you know...
@@ -558,9 +447,9 @@ Don't edit the exported HTML file!
 </p>
 </div>
 </div>
-<div id="outline-container-org9758b33" class="outline-4">
-<h4 id="org9758b33">Inline LaTeX</h4>
-<div class="outline-text-4" id="text-org9758b33">
+<div id="outline-container-orgd4e2f13" class="outline-4">
+<h4 id="orgd4e2f13">Inline LaTeX</h4>
+<div class="outline-text-4" id="text-orgd4e2f13">
 <p>
 You can also use raw LaTeX. XXX
 </p>
@@ -570,9 +459,9 @@ Text can be preformatted (in a fixed-width font).
 </p>
 </div>
 </div>
-<div id="outline-container-orgf9dc12c" class="outline-4">
-<h4 id="orgf9dc12c">Centered text</h4>
-<div class="outline-text-4" id="text-orgf9dc12c">
+<div id="outline-container-orgc52e592" class="outline-4">
+<h4 id="orgc52e592">Centered text</h4>
+<div class="outline-text-4" id="text-orgc52e592">
 <div class="org-center">
 <p>
 This text is centered!
@@ -581,13 +470,13 @@ This text is centered!
 </div>
 </div>
 </div>
-<div id="outline-container-org53ca055" class="outline-3">
-<h3 id="org53ca055">Code blocks</h3>
-<div class="outline-text-3" id="text-org53ca055">
+<div id="outline-container-org8f7386b" class="outline-3">
+<h3 id="org8f7386b">Code blocks</h3>
+<div class="outline-text-3" id="text-org8f7386b">
 </div>
-<div id="outline-container-org9bbbb77" class="outline-4">
-<h4 id="org9bbbb77">Line numbers</h4>
-<div class="outline-text-4" id="text-org9bbbb77">
+<div id="outline-container-org3e7510d" class="outline-4">
+<h4 id="org3e7510d">Line numbers</h4>
+<div class="outline-text-4" id="text-org3e7510d">
 <p>
 Both in <code>example</code> and in <code>src</code> snippets, you can add a <code>-n</code> switch to the end of the
 <code>begin</code> line, to get the lines of the example numbered.
@@ -636,18 +525,18 @@ In line <a href="#coderef-sc" class="coderef" onmouseover="CodeHighlightOn(this,
 </p>
 </div>
 </div>
-<div id="outline-container-orgf38fa3f" class="outline-4">
-<h4 id="orgf38fa3f">Output</h4>
-<div class="outline-text-4" id="text-orgf38fa3f">
+<div id="outline-container-orga02668c" class="outline-4">
+<h4 id="orga02668c">Output</h4>
+<div class="outline-text-4" id="text-orga02668c">
 <p>
 The output from the <b>execution</b> of programs, scripts or commands can be inserted
 in the document itself, allowing you to work in the <i>reproducible research</i>
 mindset.
 </p>
 </div>
-<div id="outline-container-org5972ed8" class="outline-5">
-<h5 id="org5972ed8">Text</h5>
-<div class="outline-text-5" id="text-org5972ed8">
+<div id="outline-container-org46ca6f9" class="outline-5">
+<h5 id="org46ca6f9">Text</h5>
+<div class="outline-text-5" id="text-org46ca6f9">
 <p>
 A one-liner result:
 </p>
@@ -662,14 +551,14 @@ A one-liner result:
 </pre>
 </div>
 </div>
-<div id="outline-container-orgc12b058" class="outline-5">
-<h5 id="orgc12b058">Graphics</h5>
-<div class="outline-text-5" id="text-orgc12b058">
+<div id="outline-container-org9fec4fc" class="outline-5">
+<h5 id="org9fec4fc">Graphics</h5>
+<div class="outline-text-5" id="text-org9fec4fc">
 <p>
 Data to be charted:
 </p>
 
-<table id="orgf9536a0" border="1" cellspacing="0" cellpadding="6" rules="all" frame="border" width="100%">
+<table id="orgac15336" border="1" cellspacing="0" cellpadding="6" rules="all" frame="border" width="100%">
 
 
 <colgroup>
@@ -751,7 +640,7 @@ Code:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-R" id="orgfdc3327">plot(data, type="b", bty="l", col=c("#ABD249"), las=1, lwd=4)
+<pre class="src src-R" id="orgcef5011">plot(data, type="b", bty="l", col=c("#ABD249"), las=1, lwd=4)
 grid(nx=NULL, ny=NULL, col=c("#E8E8E8"), lwd=1)
 legend("bottom", legend=c("Degrees"), col=c("#ABD249"), pch=c(19))
 </pre>
@@ -762,15 +651,15 @@ The resulting chart:
 </p>
 
 
-<div id="org533b146" class="figure">
+<div id="org84ed47f" class="figure">
 <p><img src="images/Rplot.png" alt="Rplot.png" />
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgd2d2c70" class="outline-5">
-<h5 id="orgd2d2c70">R code block</h5>
-<div class="outline-text-5" id="text-orgd2d2c70">
+<div id="outline-container-orgab37139" class="outline-5">
+<h5 id="orgab37139">R code block</h5>
+<div class="outline-text-5" id="text-orgab37139">
 <div class="org-src-container">
 <pre class="src src-R">library(ggplot2)
 summary(cars)
@@ -790,30 +679,30 @@ qplot(speed, dist, data = cars) + geom_smooth()
 </div>
 </div>
 </div>
-<div id="outline-container-orged4abcb" class="outline-3">
-<h3 id="orged4abcb">Inline code</h3>
-<div class="outline-text-3" id="text-orged4abcb">
+<div id="outline-container-org7f32c8e" class="outline-3">
+<h3 id="org7f32c8e">Inline code</h3>
+<div class="outline-text-3" id="text-org7f32c8e">
 <p>
 You can also evaluate code inline as follows: 1 + 1 is .
 </p>
 </div>
 </div>
-<div id="outline-container-org59540d8" class="outline-3">
-<h3 id="org59540d8">Notes at the footer</h3>
-<div class="outline-text-3" id="text-org59540d8">
+<div id="outline-container-org68bb73a" class="outline-3">
+<h3 id="org68bb73a">Notes at the footer</h3>
+<div class="outline-text-3" id="text-org68bb73a">
 <p>
 It is possible to define named footnotes<sup><a id="fnr.myfootnote" class="footref" href="#fn.myfootnote" role="doc-backlink">1</a></sup>, or ones with
 automatic anchors<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc75ff0e" class="outline-3">
-<h3 id="orgc75ff0e">Formatting text</h3>
-<div class="outline-text-3" id="text-orgc75ff0e">
+<div id="outline-container-org5ba62a5" class="outline-3">
+<h3 id="org5ba62a5">Formatting text</h3>
+<div class="outline-text-3" id="text-org5ba62a5">
 </div>
-<div id="outline-container-org8e8696f" class="outline-4">
-<h4 id="org8e8696f">Text effects</h4>
-<div class="outline-text-4" id="text-org8e8696f">
+<div id="outline-container-org8c61eeb" class="outline-4">
+<h4 id="org8c61eeb">Text effects</h4>
+<div class="outline-text-4" id="text-org8c61eeb">
 <p>
 <i>Emphasize</i> (italics), <b>strongly</b> (bold), and <b><i>very strongly</i></b> (bold italics).
 </p>
@@ -845,9 +734,9 @@ Other elements to use sparingly are:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc3ac63b" class="outline-4">
-<h4 id="orgc3ac63b">Quotations</h4>
-<div class="outline-text-4" id="text-orgc3ac63b">
+<div id="outline-container-orgec4cb78" class="outline-4">
+<h4 id="orgec4cb78">Quotations</h4>
+<div class="outline-text-4" id="text-orgec4cb78">
 <p>
 Use the <code>quote</code> block to typeset quoted text.
 </p>
@@ -922,9 +811,9 @@ See <a href="http://www.google.com/">http://www.google.com/</a> for more informa
 </p>
 </div>
 </div>
-<div id="outline-container-orgeb3086e" class="outline-4">
-<h4 id="orgeb3086e">Spaces</h4>
-<div class="outline-text-4" id="text-orgeb3086e">
+<div id="outline-container-org2fa1433" class="outline-4">
+<h4 id="org2fa1433">Spaces</h4>
+<div class="outline-text-4" id="text-org2fa1433">
 <p>
 Using non-breaking spaces.
 </p>
@@ -936,9 +825,9 @@ Or add/use an Org entity?
 </div>
 </div>
 </div>
-<div id="outline-container-orgd992ec9" class="outline-3">
-<h3 id="orgd992ec9">Mathematical formulae</h3>
-<div class="outline-text-3" id="text-orgd992ec9">
+<div id="outline-container-orgebe175c" class="outline-3">
+<h3 id="orgebe175c">Mathematical formulae</h3>
+<div class="outline-text-3" id="text-orgebe175c">
 <p>
 You can embed LaTeX math formatting in Org mode files using the following
 syntax:
@@ -987,11 +876,11 @@ The <i>sinus theorem</i> can then be written as the equation:
 \end{equation}</li>
 
 <li><p>
-See Equation \eqref{orgf8b2e17},
+See Equation \eqref{org9e01964},
 </p>
 
 \begin{equation}
-\label{orgf8b2e17}
+\label{org9e01964}
 n_{i+1} = \frac{n_{i} (d-i) (e-1)}{(i+1)}
 \end{equation}
 
@@ -1011,25 +900,25 @@ environments ($$, &#x2026;).
 </p>
 </div>
 </div>
-<div id="outline-container-org69169ce" class="outline-3">
-<h3 id="org69169ce">Special characters</h3>
-<div class="outline-text-3" id="text-org69169ce">
+<div id="outline-container-orgf76124a" class="outline-3">
+<h3 id="orgf76124a">Special characters</h3>
+<div class="outline-text-3" id="text-orgf76124a">
 <p>
 Some of the widely used special characters (converted from text characters to
 their typographically correct entitites):
 </p>
 </div>
-<div id="outline-container-org25dec4f" class="outline-4">
-<h4 id="org25dec4f">Accents</h4>
-<div class="outline-text-4" id="text-org25dec4f">
+<div id="outline-container-org779cf93" class="outline-4">
+<h4 id="org779cf93">Accents</h4>
+<div class="outline-text-4" id="text-org779cf93">
 <p>
 &Agrave; &Aacute;
 </p>
 </div>
 </div>
-<div id="outline-container-orgf51973b" class="outline-4">
-<h4 id="orgf51973b">Punctuation</h4>
-<div class="outline-text-4" id="text-orgf51973b">
+<div id="outline-container-orgf192cc0" class="outline-4">
+<h4 id="orgf192cc0">Punctuation</h4>
+<div class="outline-text-4" id="text-orgf192cc0">
 <p>
 Dash: &ndash; &mdash;
 </p>
@@ -1047,9 +936,9 @@ Miscellaneous: &para; &ordf;
 </p>
 </div>
 </div>
-<div id="outline-container-orgbd70a21" class="outline-4">
-<h4 id="orgbd70a21">Commercial symbols</h4>
-<div class="outline-text-4" id="text-orgbd70a21">
+<div id="outline-container-orga5e63bb" class="outline-4">
+<h4 id="orga5e63bb">Commercial symbols</h4>
+<div class="outline-text-4" id="text-orga5e63bb">
 <p>
 Property marks: &copy; &reg;
 </p>
@@ -1059,17 +948,17 @@ Currency: &cent; &euro; &yen; &pound;
 </p>
 </div>
 </div>
-<div id="outline-container-org9a9ea20" class="outline-4">
-<h4 id="org9a9ea20">Greek characters</h4>
-<div class="outline-text-4" id="text-org9a9ea20">
+<div id="outline-container-org4672dfe" class="outline-4">
+<h4 id="org4672dfe">Greek characters</h4>
+<div class="outline-text-4" id="text-org4672dfe">
 <p>
 The Greek letters &alpha;, &beta;, and &gamma; are used to denote angles.
 </p>
 </div>
 </div>
-<div id="outline-container-org4cb5d29" class="outline-4">
-<h4 id="org4cb5d29">Math characters</h4>
-<div class="outline-text-4" id="text-org4cb5d29">
+<div id="outline-container-orge40b3d7" class="outline-4">
+<h4 id="orge40b3d7">Math characters</h4>
+<div class="outline-text-4" id="text-orge40b3d7">
 <p>
 Science: &plusmn; &divide;
 </p>
@@ -1087,26 +976,26 @@ Signs and symbols: &bull; *
 </p>
 </div>
 </div>
-<div id="outline-container-orga86ad0c" class="outline-4">
-<h4 id="orga86ad0c">Misc</h4>
-<div class="outline-text-4" id="text-orga86ad0c">
+<div id="outline-container-org58a3e2b" class="outline-4">
+<h4 id="org58a3e2b">Misc</h4>
+<div class="outline-text-4" id="text-org58a3e2b">
 <p>
 Suits: &clubs; &spades;
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org16e1035" class="outline-3">
-<h3 id="org16e1035">Comments</h3>
-<div class="outline-text-3" id="text-org16e1035">
+<div id="outline-container-org5ace0cf" class="outline-3">
+<h3 id="org5ace0cf">Comments</h3>
+<div class="outline-text-3" id="text-org5ace0cf">
 <p>
 It's possible to add comments in the document.
 </p>
 </div>
 </div>
-<div id="outline-container-org986c912" class="outline-3">
-<h3 id="org986c912">Tables</h3>
-<div class="outline-text-3" id="text-org986c912">
+<div id="outline-container-org9df16c1" class="outline-3">
+<h3 id="org9df16c1">Tables</h3>
+<div class="outline-text-3" id="text-org9df16c1">
 <p>
 You can create tables with an optional header row (by using an horizontal line
 of dashes to separate it from the rest of the table).
@@ -1245,9 +1134,9 @@ Different from the following:
 </tbody>
 </table>
 </div>
-<div id="outline-container-orgb08d29d" class="outline-4">
-<h4 id="orgb08d29d">Align tables on the page</h4>
-<div class="outline-text-4" id="text-orgb08d29d">
+<div id="outline-container-org789377f" class="outline-4">
+<h4 id="org789377f">Align tables on the page</h4>
+<div class="outline-text-4" id="text-org789377f">
 <p>
 Here is a table on the left side:
 </p>
@@ -1368,13 +1257,13 @@ to the right.
 </div>
 </div>
 </div>
-<div id="outline-container-orgfc789ce" class="outline-3">
-<h3 id="orgfc789ce">Images, video and audio</h3>
-<div class="outline-text-3" id="text-orgfc789ce">
+<div id="outline-container-orga03c7f1" class="outline-3">
+<h3 id="orga03c7f1">Images, video and audio</h3>
+<div class="outline-text-3" id="text-orga03c7f1">
 </div>
-<div id="outline-container-org59c418c" class="outline-4">
-<h4 id="org59c418c">Images</h4>
-<div class="outline-text-4" id="text-org59c418c">
+<div id="outline-container-org8dd9b52" class="outline-4">
+<h4 id="org8dd9b52">Images</h4>
+<div class="outline-text-4" id="text-org8dd9b52">
 <p>
 You can insert <b>image</b> files of different <b>formats</b> to a page:
 </p>
@@ -1428,7 +1317,7 @@ In-line picture:
 </p>
 
 
-<div id="orge82cb8f" class="figure">
+<div id="orgcd4b3b9" class="figure">
 <p><img src="../../images/org-mode-unicorn.png" alt="org-mode-unicorn.png" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Org mode logo</p>
@@ -1459,9 +1348,9 @@ Place images side by side: XXX
 </p>
 </div>
 </div>
-<div id="outline-container-orgecf8f9c" class="outline-4">
-<h4 id="orgecf8f9c">Video</h4>
-<div class="outline-text-4" id="text-orgecf8f9c">
+<div id="outline-container-org4d07f85" class="outline-4">
+<h4 id="org4d07f85">Video</h4>
+<div class="outline-text-4" id="text-org4d07f85">
 <p>
 Videos can't be added directly but you can add an image with a link to the video like this:
 </p>
@@ -1471,20 +1360,20 @@ Videos can't be added directly but you can add an image with a link to the video
 </p>
 </div>
 </div>
-<div id="outline-container-org4bc744e" class="outline-4">
-<h4 id="org4bc744e">Sounds</h4>
+<div id="outline-container-orgbe12507" class="outline-4">
+<h4 id="orgbe12507">Sounds</h4>
 </div>
 </div>
-<div id="outline-container-org68d7fe7" class="outline-3">
-<h3 id="org68d7fe7">Special text boxes</h3>
-<div class="outline-text-3" id="text-org68d7fe7">
+<div id="outline-container-orgc2746b9" class="outline-3">
+<h3 id="orgc2746b9">Special text boxes</h3>
+<div class="outline-text-3" id="text-orgc2746b9">
 <p>
 Simple box ("inline task"): XXX
 </p>
 </div>
-<div id="outline-container-org44d3aa0" class="outline-4">
-<h4 id="org44d3aa0">Example</h4>
-<div class="outline-text-4" id="text-org44d3aa0">
+<div id="outline-container-org7e162bb" class="outline-4">
+<h4 id="org7e162bb">Example</h4>
+<div class="outline-text-4" id="text-org7e162bb">
 <p>
 You can have <code>example</code> blocks.
 </p>
@@ -1504,14 +1393,14 @@ a different default image.
 </p>
 </div>
 </div>
-<div id="outline-container-org088462f" class="outline-4">
-<h4 id="org088462f">Info</h4>
-<div class="outline-text-4" id="text-org088462f">
+<div id="outline-container-orged1859b" class="outline-4">
+<h4 id="orged1859b">Info</h4>
+<div class="outline-text-4" id="text-orged1859b">
 <p>
 An info box is displayed as follows:
 </p>
 
-<div class="info" id="org2a90fc3">
+<div class="info" id="org3ab68b6">
 <p>
 <b>Info example</b> <br />
 Did you know&#x2026;
@@ -1520,14 +1409,14 @@ Did you know&#x2026;
 </div>
 </div>
 </div>
-<div id="outline-container-org678993f" class="outline-4">
-<h4 id="org678993f">Tip</h4>
-<div class="outline-text-4" id="text-org678993f">
+<div id="outline-container-org4cff33c" class="outline-4">
+<h4 id="org4cff33c">Tip</h4>
+<div class="outline-text-4" id="text-org4cff33c">
 <p>
 A tip box is displayed as follows:
 </p>
 
-<div class="tip" id="org65b3810">
+<div class="tip" id="org1679610">
 <p>
 <b>Tip example</b> <br />
 Try doing it this way&#x2026;
@@ -1536,14 +1425,14 @@ Try doing it this way&#x2026;
 </div>
 </div>
 </div>
-<div id="outline-container-org86f2210" class="outline-4">
-<h4 id="org86f2210">Note</h4>
-<div class="outline-text-4" id="text-org86f2210">
+<div id="outline-container-org6de9d54" class="outline-4">
+<h4 id="org6de9d54">Note</h4>
+<div class="outline-text-4" id="text-org6de9d54">
 <p>
 A note box is displayed as follows:
 </p>
 
-<div class="note" id="orgac5a289">
+<div class="note" id="org47d47d5">
 <p>
 <b>Note example</b> <br />
 This is a useful note&#x2026;
@@ -1552,14 +1441,14 @@ This is a useful note&#x2026;
 </div>
 </div>
 </div>
-<div id="outline-container-org33c03bb" class="outline-4">
-<h4 id="org33c03bb">Warning</h4>
-<div class="outline-text-4" id="text-org33c03bb">
+<div id="outline-container-orgd9b6626" class="outline-4">
+<h4 id="orgd9b6626">Warning</h4>
+<div class="outline-text-4" id="text-orgd9b6626">
 <p>
 A warning box is displayed as follows:
 </p>
 
-<div class="warning" id="orgb6028af">
+<div class="warning" id="orgaa2a345">
 <p>
 <b>Warning example</b> <br />
 Be careful!  Check that you have&#x2026;
@@ -1573,22 +1462,22 @@ Be careful!  Check that you have&#x2026;
 <h3 id="links">Links</h3>
 <div class="outline-text-3" id="text-links">
 </div>
-<div id="outline-container-orgd4889b6" class="outline-4">
-<h4 id="orgd4889b6">Anchors</h4>
-<div class="outline-text-4" id="text-orgd4889b6">
+<div id="outline-container-org5788cb5" class="outline-4">
+<h4 id="org5788cb5">Anchors</h4>
+<div class="outline-text-4" id="text-org5788cb5">
 <p>
 Links generally point to an headline.
 </p>
 
 <p>
-They can also point to a link anchor <a id="org0515987"></a> in the current
+They can also point to a link anchor <a id="orga1693eb"></a> in the current
 document or in another document.
 </p>
 </div>
 </div>
-<div id="outline-container-org6f98a6b" class="outline-4">
-<h4 id="org6f98a6b">Hyperlinks</h4>
-<div class="outline-text-4" id="text-org6f98a6b">
+<div id="outline-container-org50848e7" class="outline-4">
+<h4 id="org50848e7">Hyperlinks</h4>
+<div class="outline-text-4" id="text-org50848e7">
 <p>
 This document is available in <a href="example.txt">plain text</a>, <a href="example.html">HTML</a> and <a href="example.pdf">PDF</a>.
 </p>
@@ -1597,22 +1486,22 @@ This document is available in <a href="example.txt">plain text</a>, <a href="exa
 The links are delimited by <code>[square brackets]</code>.
 </p>
 </div>
-<div id="outline-container-org31f98ab" class="outline-5">
-<h5 id="org31f98ab">Internal links</h5>
-<div class="outline-text-5" id="text-org31f98ab">
+<div id="outline-container-orgcef6a74" class="outline-5">
+<h5 id="orgcef6a74">Internal links</h5>
+<div class="outline-text-5" id="text-orgcef6a74">
 <p>
 See:
 </p>
 <ul class="org-ul">
 <li>chapter <a href="#links">Links</a></li>
-<li>section <a href="#orgd4889b6">Anchors</a></li>
-<li><a href="#org0515987">target in the document</a></li>
+<li>section <a href="#org5788cb5">Anchors</a></li>
+<li><a href="#orga1693eb">target in the document</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcd9d0c7" class="outline-5">
-<h5 id="orgcd9d0c7">External links</h5>
-<div class="outline-text-5" id="text-orgcd9d0c7">
+<div id="outline-container-org2b84216" class="outline-5">
+<h5 id="org2b84216">External links</h5>
+<div class="outline-text-5" id="text-org2b84216">
 <p>
 See the <a href="http://orgmode.org/">Org mode Web site</a>.
 </p>
@@ -1625,21 +1514,21 @@ See the <a href="http://orgmode.org/">Org mode Web site</a>.
 </div>
 </div>
 </div>
-<div id="outline-container-orga7db39b" class="outline-2">
-<h2 id="orga7db39b">Org miscellaneous</h2>
-<div class="outline-text-2" id="text-orga7db39b">
+<div id="outline-container-orgb1fcddf" class="outline-2">
+<h2 id="orgb1fcddf">Org miscellaneous</h2>
+<div class="outline-text-2" id="text-orgb1fcddf">
 </div>
-<div id="outline-container-org21542c7" class="outline-3">
-<h3 id="org21542c7">Dates</h3>
-<div class="outline-text-3" id="text-org21542c7">
+<div id="outline-container-orgb5f6e32" class="outline-3">
+<h3 id="orgb5f6e32">Dates</h3>
+<div class="outline-text-3" id="text-orgb5f6e32">
 <p>
 Timestamps: <span class="timestamp-wrapper"><span class="timestamp">[2014-01-16 jeu.] </span></span> and <span class="timestamp-wrapper"><span class="timestamp">&lt;2014-01-16 jeu.&gt;</span></span>.
 </p>
 </div>
 </div>
-<div id="outline-container-org5632178" class="outline-3">
-<h3 id="org5632178"><span class="done DONE">DONE</span> Buy GTD book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="online">online</span></span></h3>
-<div class="outline-text-3" id="text-org5632178">
+<div id="outline-container-org6fc1490" class="outline-3">
+<h3 id="org6fc1490"><span class="done DONE">DONE</span> Buy GTD book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="online">online</span></span></h3>
+<div class="outline-text-3" id="text-org6fc1490">
 <p>
 By default, <code>DONE</code> actions will be collapsed.
 </p>
@@ -1650,9 +1539,9 @@ items.
 </p>
 </div>
 </div>
-<div id="outline-container-orgdbdc2a5" class="outline-3">
-<h3 id="orgdbdc2a5"><span class="todo TODO">TODO</span> Read GTD book</h3>
-<div class="outline-text-3" id="text-orgdbdc2a5">
+<div id="outline-container-orge565072" class="outline-3">
+<h3 id="orge565072"><span class="todo TODO">TODO</span> Read GTD book</h3>
+<div class="outline-text-3" id="text-orge565072">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2014-09-11 jeu.&gt;</span></span></p>
 
 <p>
@@ -1670,9 +1559,9 @@ That can be changed by adding such a line (into your Org document):
 </div>
 </div>
 </div>
-<div id="outline-container-org57dc5bb" class="outline-3 hsCollapsed">
-<h3 id="org57dc5bb"><span class="todo TODO">TODO</span> Apply GTD methodoloy</h3>
-<div class="outline-text-3" id="text-org57dc5bb">
+<div id="outline-container-orgcd82719" class="outline-3 hsCollapsed">
+<h3 id="orgcd82719"><span class="todo TODO">TODO</span> Apply GTD methodoloy</h3>
+<div class="outline-text-3" id="text-orgcd82719">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2014-12-01 lun.&gt;</span></span></p>
 <p>
 This section will be collapsed when loading the page because the entry has the
@@ -1684,18 +1573,18 @@ Powerful, no?
 </p>
 </div>
 </div>
-<div id="outline-container-org2aa67a6" class="outline-3">
-<h3 id="org2aa67a6">Some note&#xa0;&#xa0;&#xa0;<span class="tag"><span class="computer">computer</span>&#xa0;<span class="write">write</span></span></h3>
-<div class="outline-text-3" id="text-org2aa67a6">
+<div id="outline-container-orga5971fe" class="outline-3">
+<h3 id="orga5971fe">Some note&#xa0;&#xa0;&#xa0;<span class="tag"><span class="computer">computer</span>&#xa0;<span class="write">write</span></span></h3>
+<div class="outline-text-3" id="text-orga5971fe">
 <p>
 You can add tags to any entry, and hightlight all entries having some specific
 tag by clicking on the buttons made accessible to you in the "Dashboard".
 </p>
 </div>
 </div>
-<div id="outline-container-orgabb2d0d" class="outline-3">
-<h3 id="orgabb2d0d">Weekly review&#xa0;&#xa0;&#xa0;<span class="tag"><span class="computer">computer</span></span></h3>
-<div class="outline-text-3" id="text-orgabb2d0d">
+<div id="outline-container-orga4e4183" class="outline-3">
+<h3 id="orga4e4183">Weekly review&#xa0;&#xa0;&#xa0;<span class="tag"><span class="computer">computer</span></span></h3>
+<div class="outline-text-3" id="text-orga4e4183">
 <p>
 Now, you can even make your weekly review in the HTML export&#x2026; Press the <code>r</code> key
 to start entering the "review mode" where all but one active entry are
@@ -1704,9 +1593,9 @@ collapsed, so that you can really focus on one item at a time!
 </div>
 </div>
 </div>
-<div id="outline-container-orga32ba5f" class="outline-2">
-<h2 id="orga32ba5f">Org macros</h2>
-<div class="outline-text-2" id="text-orga32ba5f">
+<div id="outline-container-orgc891e6b" class="outline-2">
+<h2 id="orgc891e6b">Org macros</h2>
+<div class="outline-text-2" id="text-orgc891e6b">
 <p>
 <span style="color: blue"> This text is colored in blue.</span>
 </p>
@@ -1720,9 +1609,9 @@ Find more macros on <a href="https://github.com/fniessen/org-macros">GitHub</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org633f94f" class="outline-2">
-<h2 id="org633f94f">BigBlow addons</h2>
-<div class="outline-text-2" id="text-org633f94f">
+<div id="outline-container-orgd1a3520" class="outline-2">
+<h2 id="orgd1a3520">BigBlow addons</h2>
+<div class="outline-text-2" id="text-orgd1a3520">
 <p>
 The string <code>fixme</code> (in <b>upper case</b>) gets replaced by a "Fix Me!" image:
 </p>
@@ -1754,7 +1643,7 @@ non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Author: Fabrice Niessen</p>
-<p class="date">Created: 2025-10-10 ven. 23:40</p>
+<p class="date">Created: 2025-10-13 lun. 18:41</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

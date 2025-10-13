@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-13 lun. 18:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Theme Chooser</title>
+<meta name="author" content="Fabrice Niessen" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="../src/bigblow_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="../src/bigblow_theme/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="../src/bigblow_theme/css/hideshow.css"/>
+<style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+code { display: inline; max-width: 100%; overflow-x: auto; }
+pre.src { position: relative; /* overflow: visible; */ padding-top: 1.2em; max-height: 500px; overflow-y: auto }
+pre.src:before { display: none; position: absolute;
+top: -10px; right: 10px; padding: 3px; border: 1px solid black;
+padding-top: 0.8em; border: none; font-weight: bold; color: blue; }
+pre.src:hover:before { display: inline;}
+/* Languages per Org manual */
+pre.src-asymptote:before             { content: 'Asymptote'; }
+pre.src-awk:before                   { content: 'Awk'; }
+pre.src-C:before                     { content: 'C'; }
+/* pre.src-C++ doesn't work in CSS */
+pre.src-clojure:before               { content: 'Clojure'; }
+pre.src-css:before                   { content: 'CSS'; }
+pre.src-D:before                     { content: 'D'; }
+pre.src-ditaa:before                 { content: 'ditaa'; }
+pre.src-dot:before                   { content: 'Graphviz'; }
+pre.src-calc:before                  { content: 'Emacs Calc'; }
+pre.src-compilation:before           { content: 'Compilation'; }
+pre.src-emacs-lisp:before            { content: 'Emacs Lisp'; }
+pre.src-fortran:before               { content: 'Fortran'; }
+pre.src-gnuplot:before               { content: 'gnuplot'; }
+pre.src-haskell:before               { content: 'Haskell'; }
+pre.src-java:before                  { content: 'Java'; }
+pre.src-js:before                    { content: 'Javascript'; }
+pre.src-json:before, pre.src-jsonian:before { content: 'JSON'; }
+pre.src-kusto:before                 { content: 'Kusto'; }
+pre.src-latex:before                 { content: 'LaTeX'; }
+pre.src-ledger:before                { content: 'Ledger'; }
+pre.src-lisp:before                  { content: 'Lisp'; }
+pre.src-lilypond:before              { content: 'Lilypond'; }
+pre.src-lua:before                   { content: 'Lua'; }
+pre.src-matlab:before                { content: 'MATLAB'; }
+pre.src-mscgen:before                { content: 'Mscgen'; }
+pre.src-ocaml:before                 { content: 'Objective Caml'; }
+pre.src-octave:before                { content: 'Octave'; }
+pre.src-org:before                   { content: 'Org mode'; }
+pre.src-oz:before                    { content: 'OZ'; }
+pre.src-plantuml:before              { content: 'Plantuml'; }
+pre.src-processing:before            { content: 'Processing.js'; }
+pre.src-python:before                { content: 'Python'; }
+pre.src-R:before                     { content: 'R'; }
+pre.src-ruby:before                  { content: 'Ruby'; }
+pre.src-sass:before                  { content: 'Sass'; }
+pre.src-scheme:before                { content: 'Scheme'; }
+pre.src-screen:before                { content: 'Gnu Screen'; }
+pre.src-sed:before                   { content: 'Sed'; }
+pre.src-sh:before                    { content: 'shell'; }
+pre.src-sql:before                   { content: 'SQL'; }
+pre.src-sqlite:before                { content: 'SQLite'; }
+pre.src-sqlldr:before                { content: 'SQL*Loader'; }
+/* additional languages in org.el's org-babel-load-languages alist */
+pre.src-forth:before                 { content: 'Forth'; }
+pre.src-io:before                    { content: 'IO'; }
+pre.src-J:before                     { content: 'J'; }
+pre.src-makefile:before              { content: 'Makefile'; }
+pre.src-maxima:before                { content: 'Maxima'; }
+pre.src-perl:before                  { content: 'Perl'; }
+pre.src-picolisp:before              { content: 'Pico Lisp'; }
+pre.src-scala:before                 { content: 'Scala'; }
+pre.src-shell:before                 { content: 'Shell Script'; }
+pre.src-ebnf2ps:before               { content: 'ebfn2ps'; }
+/* additional language identifiers per "defun org-babel-execute"
+in ob-*.el */
+pre.src-cpp:before                   { content: 'C++'; }
+pre.src-abc:before                   { content: 'ABC'; }
+pre.src-coq:before                   { content: 'Coq'; }
+pre.src-groovy:before                { content: 'Groovy'; }
+/* additional language identifiers from org-babel-shell-names in
+ob-shell.el: ob-shell is the only babel language using a lambda to put
+the execution function name together. */
+pre.src-bash:before                  { content: 'bash'; }
+pre.src-csh:before                   { content: 'csh'; }
+pre.src-ash:before                   { content: 'ash'; }
+pre.src-dash:before                  { content: 'dash'; }
+pre.src-ksh:before                   { content: 'ksh'; }
+pre.src-mksh:before                  { content: 'mksh'; }
+pre.src-posh:before                  { content: 'posh'; }
+pre.src-powershell:before            { content: 'PowerShell'; }
+/* Additional Emacs modes also supported by the LaTeX listings package */
+pre.src-ada:before                   { content: 'Ada'; }
+pre.src-asm:before                   { content: 'Assembler'; }
+pre.src-caml:before                  { content: 'Caml'; }
+pre.src-delphi:before                { content: 'Delphi'; }
+pre.src-html:before                  { content: 'HTML'; }
+pre.src-idl:before                   { content: 'IDL'; }
+pre.src-mercury:before               { content: 'Mercury'; }
+pre.src-metapost:before              { content: 'MetaPost'; }
+pre.src-modula-2:before              { content: 'Modula-2'; }
+pre.src-pascal:before                { content: 'Pascal'; }
+pre.src-ps:before                    { content: 'PostScript'; }
+pre.src-prolog:before                { content: 'Prolog'; }
+pre.src-simula:before                { content: 'Simula'; }
+pre.src-tcl:before                   { content: 'tcl'; }
+pre.src-tex:before                   { content: 'TeX'; }
+pre.src-plain-tex:before             { content: 'Plain TeX'; }
+pre.src-verilog:before               { content: 'Verilog'; }
+pre.src-vhdl:before                  { content: 'VHDL'; }
+pre.src-xml:before                   { content: 'XML'; }
+pre.src-nxml:before                  { content: 'XML'; }
+/* add a generic configuration mode; LaTeX export needs an additional
+(add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+pre.src-yaml:before                  { content: 'YAML'; }
+pre.src-csharp:before                { content: 'C#'; }
+pre.src-conf:before                  { content: 'Configuration File'; }
+pre.src-conf-unix:before             { content: 'Configuration File'; }
+pre.src-conf-colon:before            { content: 'Configuration File'; }
+pre.src-bat:before                   { content: 'DOS/Windows batch file'; }
+pre.src-java-manifest-generic:before { content: 'Java-Manifest-Generic'; }
+pre.src-csharp:before                { content: 'C#'; }
+pre.src-csv:before                   { content: 'CSV'; }
+pre.src-restclient:before            { content: 'REST Client'; }
+pre.src-diff:before                  { content: 'Diff'; }
+pre.src-conf-javaprop:before         { content: 'Conf: Java properties'; }
+/*]]>*/-->
+</style>
+<script type="text/javascript" src="../src/bigblow_theme/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../src/bigblow_theme/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="../src/bigblow_theme/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="../src/bigblow_theme/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="../src/bigblow_theme/js/bigblow.js"></script>
+<script type="text/javascript" src="../src/bigblow_theme/js/hideshow.js"></script>
+<script type="text/javascript" src="../src/lib/js/jquery.stickytableheaders.min.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Theme Chooser</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd8c9e1d">Header 1</a>
+<ul>
+<li><a href="#orge93741e">Header 2</a>
+<ul>
+<li><a href="#orgcaf15a4">Header 3</a>
+<ul>
+<li><a href="#org70a841a">Header 4</a></li>
+</ul>
+</li>
+<li><a href="#orgad40f98">There's a horizontal rule below this.</a></li>
+<li><a href="#orgc4af460">Here is an unordered list:</a></li>
+<li><a href="#org9cded7b">And an ordered list:</a></li>
+<li><a href="#org24e6252">And a nested list:</a></li>
+<li><a href="#orga6beac9">Small image</a></li>
+<li><a href="#org8b60c95">Large image</a></li>
+<li><a href="#org86f81d3">Definition lists can be used with HTML syntax.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+Text can be <b>bold</b>, <i>italic</i>, or <del>strikethrough</del>.
+</p>
+
+<p>
+<a href="https://github.com/fniessen/org-html-themes/org/theme-chooser.htmltheme-chooser.txt">Link to another page.</a>
+</p>
+
+<p>
+There should be whitespace between paragraphs.
+</p>
+
+<p>
+There should be whitespace between paragraphs. We recommend including a README,
+or a file with information about your project.
+</p>
+<div id="outline-container-orgd8c9e1d" class="outline-2">
+<h2 id="orgd8c9e1d">Header 1</h2>
+<div class="outline-text-2" id="text-orgd8c9e1d">
+<p>
+This is a normal paragraph following a header. GitHub is a code hosting platform
+for version control and collaboration. It lets you and others work together on
+projects from anywhere.
+</p>
+</div>
+<div id="outline-container-orge93741e" class="outline-3">
+<h3 id="orge93741e">Header 2</h3>
+<div class="outline-text-3" id="text-orge93741e">
+<p>
+This is a blockquote following a header.
+</p>
+
+<p>
+When something is important enough, you do it even if the odds are not in your
+favor.
+</p>
+</div>
+<div id="outline-container-orgcaf15a4" class="outline-4">
+<h4 id="orgcaf15a4">Header 3</h4>
+<div class="outline-text-4" id="text-orgcaf15a4">
+<div class="org-src-container">
+<pre class="src src-javascript"><span class="org-comment-delimiter">// </span><span class="org-comment">Javascript code with syntax highlighting.
+</span><span class="org-keyword">var</span> <span class="org-variable-name">fun</span> = <span class="org-keyword">function</span> lang(<span class="org-variable-name">l</span>) {
+  dateformat.i18n = require(<span class="org-string">'./lang/'</span> + l)
+  <span class="org-keyword">return</span> <span class="org-constant">true</span>;
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-ruby"><span class="org-comment-delimiter"># </span><span class="org-comment">Ruby code with syntax highlighting
+</span><span class="org-type">GitHubPages</span>::<span class="org-type">Dependencies</span>.gems.each <span class="org-keyword">do</span> |gem, version|
+  s.add_dependency(gem, <span class="org-string">"= </span><span class="org-variable-name">#{version}</span><span class="org-string">"</span>)
+<span class="org-keyword">end</span>
+</pre>
+</div>
+</div>
+<div id="outline-container-org70a841a" class="outline-5">
+<h5 id="org70a841a">Header 4</h5>
+<div class="outline-text-5" id="text-org70a841a">
+<ul class="org-ul">
+<li>This is an unordered list following a header.</li>
+<li>This is an unordered list following a header.</li>
+<li>This is an unordered list following a header.</li>
+</ul>
+</div>
+<div id="outline-container-org9cca7fa" class="outline-6">
+<h6 id="org9cca7fa">Header 5</h6>
+<div class="outline-text-6" id="text-org9cca7fa">
+<ol class="org-ol">
+<li>This is an ordered list following a header.</li>
+<li>This is an ordered list following a header.</li>
+<li>This is an ordered list following a header.</li>
+</ol>
+</div>
+<div id="outline-container-org1326ae6" class="outline-7">
+<h7 id="org1326ae6">Header 6</h7>
+<div class="outline-text-7" id="text-org1326ae6">
+<table border="1" cellspacing="0" cellpadding="6" rules="all" frame="border" width="100%">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">head1</th>
+<th scope="col" class="org-left">head two</th>
+<th scope="col" class="org-left">three</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">ok</td>
+<td class="org-left">good swedish fish</td>
+<td class="org-left">nice</td>
+</tr>
+
+<tr>
+<td class="org-left">out of stock</td>
+<td class="org-left">good and plenty</td>
+<td class="org-left">nice</td>
+</tr>
+
+<tr>
+<td class="org-left">ok</td>
+<td class="org-left">good <code>oreos</code></td>
+<td class="org-left">hmm</td>
+</tr>
+
+<tr>
+<td class="org-left">ok</td>
+<td class="org-left">good <code>zoute</code> drop</td>
+<td class="org-left">yumm</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgad40f98" class="outline-4">
+<h4 id="orgad40f98">There's a horizontal rule below this.</h4>
+<div class="outline-text-4" id="text-orgad40f98">
+<hr />
+</div>
+</div>
+<div id="outline-container-orgc4af460" class="outline-4">
+<h4 id="orgc4af460">Here is an unordered list:</h4>
+<div class="outline-text-4" id="text-orgc4af460">
+<ul class="org-ul">
+<li>Item foo</li>
+<li>Item bar</li>
+<li>Item baz</li>
+<li>Item zip</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9cded7b" class="outline-4">
+<h4 id="org9cded7b">And an ordered list:</h4>
+<div class="outline-text-4" id="text-org9cded7b">
+<ol class="org-ol">
+<li>Item one</li>
+<li>Item two</li>
+<li>Item three</li>
+<li>Item four</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org24e6252" class="outline-4">
+<h4 id="org24e6252">And a nested list:</h4>
+<div class="outline-text-4" id="text-org24e6252">
+<ul class="org-ul">
+<li>level 1 item
+<ul class="org-ul">
+<li>level 2 item</li>
+<li>level 2 item
+<ul class="org-ul">
+<li>level 3 item</li>
+<li>level 3 item</li>
+</ul></li>
+</ul></li>
+<li>level 1 item
+<ul class="org-ul">
+<li>level 2 item</li>
+<li>level 2 item</li>
+<li>level 2 item</li>
+</ul></li>
+<li>level 1 item
+<ul class="org-ul">
+<li>level 2 item</li>
+<li>level 2 item</li>
+</ul></li>
+<li>level 1 item</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga6beac9" class="outline-4">
+<h4 id="orga6beac9">Small image</h4>
+<div class="outline-text-4" id="text-orga6beac9">
+<p>
+Octocat
+</p>
+</div>
+</div>
+<div id="outline-container-org8b60c95" class="outline-4">
+<h4 id="org8b60c95">Large image</h4>
+<div class="outline-text-4" id="text-org8b60c95">
+<p>
+Branching
+</p>
+</div>
+</div>
+<div id="outline-container-org86f81d3" class="outline-4">
+<h4 id="org86f81d3">Definition lists can be used with HTML syntax.</h4>
+<div class="outline-text-4" id="text-org86f81d3">
+<dl class="org-dl">
+<dt>Name</dt><dd>Godzilla</dd>
+<dt>Born</dt><dd>1952</dd>
+<dt>Birthplace</dt><dd>Japan</dd>
+<dt>Color</dt><dd>Green</dd>
+</dl>
+
+<pre class="example">
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+</pre>
+
+
+<pre class="example">
+The final element.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Fabrice Niessen</p>
+<p class="date">Created: 2025-10-13 lun. 18:43</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
